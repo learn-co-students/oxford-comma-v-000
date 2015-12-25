@@ -1,5 +1,3 @@
-newarray=["Jim", "James"]
-
 def oxford_comma(array)
   if array.length > 2
     new_last_item = "and "
@@ -19,5 +17,3 @@ def oxford_comma(array)
   end
 
 end
-
-oxford_comma(newarray)
