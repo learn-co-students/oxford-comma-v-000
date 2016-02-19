@@ -1,5 +1,5 @@
 def oxford_comma(array)
-#  array =[]
+
    if array.size == 1
      array = "#{array[0].to_s}"
    elsif array.size == 2
