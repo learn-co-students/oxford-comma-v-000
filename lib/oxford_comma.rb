@@ -9,5 +9,4 @@ def oxford_comma(array)
   else array.size > 3
     array = "#{array[0..-2].join(", ")}" + ", and " + "#{array[-1].to_s}"
   end
-
 end
