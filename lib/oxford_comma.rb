@@ -9,7 +9,9 @@ def oxford_comma(array)
   if array.length >= 3
     array[-1] = "and #{array[-1]}"
 =begin    
-    array.insert(-2, "and ")
+    This is the one from the solution. Above is the one
+    I came up with
+    array[-1].insert(0, "and ")
 =end
     array.join(", ")
   else
