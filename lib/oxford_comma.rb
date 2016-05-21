@@ -1,6 +1,6 @@
 def oxford_comma(array)
   # join method turns the array into a strings
-  # and the comma in brackets seperates each string
+  # and the comma in brackets seperates each string with a comma, the space inside the apostrophees creates a
   if array.size == 1
         array.join
 
@@ -8,7 +8,7 @@ def oxford_comma(array)
         array.join(' and ')
 
   elsif array.size == 3
-    last = array.pop
+    last = array.pop # remove and save the last string so you can return it later after you add 'and' at the end
     array.join(','' ') +',' + ' and ' + last
 
   elsif array.size > 3
@@ -16,12 +16,3 @@ def oxford_comma(array)
     array.join(','+' ') + ',' ' and ' + last
   end
 end
-# array holds values
-# each value is a string seperated by commas
-# some strings are longer than others
-# remove the strings from out of the array
-# return string values together in a line seperated by a comma
-# converted = []
-#   array.each do | element |
-#   converted << "#{element}"
-# end
