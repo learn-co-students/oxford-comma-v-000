@@ -1,5 +1,3 @@
-array = ["kiwi", "durian", "starfruit", "mangos", "dragon fruits", "lychees", "pomelos"]
-
 def oxford_comma(array)
   if array.count == 1
     array.join
@@ -10,5 +8,3 @@ def oxford_comma(array)
     array.join(", ")
   end
 end
-
-puts oxford_comma(array)
