@@ -1,23 +1,27 @@
-# require 'pry'
-
 def oxford_comma(array)
   if array.count == 1
-    this
+    string = array.join
+    string
   elsif array.count == 2
-    this
+    new_string = " and "
+    new_array = array.pop
+    array << new_string
+    array << new_array
+    string = array.join
+    string
   else
     string = array.last
     array.pop
     new_string = "and " 
     new_string << string
     array << new_string
-    array = array.join(", ")
+    string = array.join(", ")
+    string
   end
-  array
 end
 
 # if array.count == 1 
-# ["fiddleheads" =>
+# ["fiddleheads"] =>
 # "fiddleheads"
 
 # elsif array.count == 2 
