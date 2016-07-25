@@ -14,6 +14,3 @@ def oxford_comma(array)
   end
    string
 end
-
-
- #use -1 for arrays and make 1 string for last array with and then 2nd string wiht .join(comas)#
