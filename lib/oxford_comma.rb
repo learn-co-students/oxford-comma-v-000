@@ -5,9 +5,12 @@ def oxford_comma(array)
     string = array[0..1].join(", ")
     string += ", and "
     string += array[2]
-  else
+  elsif array.size == 1
     string = array.join(", ")
-
+  else
+    string = array.pop
+    string.prepend(", and ")
+    string.prepend(array.join(", "))
   end
    string
 end
