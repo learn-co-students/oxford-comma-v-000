@@ -1,13 +1,18 @@
 def oxford_comma(array)
 
-  array.collect do |arr|
-    if arr == array[-1]
-      array.push(" and #{arr}")
-    elsif arr== array[0]
-      array.push("#{arr},")
-    else
-      array.push( " #{arr},")
-    end
+  string = ""
+  array.each do |arr|
 
-  end.join("")
+    if arr== array[0]
+      string += "#{arr}"
+    elsif array.length == 2
+      string += " and #{arr}"
+      elsif arr == array[-1]
+        string += ", and #{arr}"
+
+    else
+    string += ", #{arr}"
+  end
+end
+return string
 end
