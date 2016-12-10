@@ -43,14 +43,16 @@ def oxford_comma(array)
       #return array2.join(" and ")
       #binding.pry
       array3 = []
-      array3 << "#{array[0]}"
-      array3.join(" , ")
+      #array3 << "#{array[0]}"
+      array3 << array[0]
+      binding.pry
+      array3.join (" , ")
       binding.pry
       #binding.pry
       array4 = []
       array4 << "#{array2[1]},#{array[2]}"
       #binding.pry
-      array4.join(" and ")
+      array4.join (" and ")
       binding.pry
       return array4.unshift(array3)
       binding.pry
