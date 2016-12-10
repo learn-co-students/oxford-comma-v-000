@@ -29,12 +29,12 @@ def oxford_comma(array)
     #binding.pry
  elsif
    #array_total= array_count
-   array.each do|value|
-     array2 << ("#{value}")
+     array.each do|value|
+     array2 << ("#{value}" ", ")
             end
       array2.insert(-2, "and ")
       binding.pry
-      return array2.join(", ")
+      return array2.join
       binding.pry
   end
 end
