@@ -17,16 +17,5 @@ def oxford_comma(array)
     array.each do|value|
       array2 << ("#{value}")
               end
-      array3 = []
-      array3 << array[0]
-      binding.pry
-      array3.join (" , ")
-      binding.pry
-      array4 = []
-      array4 << "#{array2[1]},#{array[2]}"
-      array4.join (" and ")
-      binding.pry
-      return array4.unshift(array3)
-      binding.pry
-  end
+
 end
