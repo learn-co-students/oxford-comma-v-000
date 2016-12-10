@@ -15,8 +15,8 @@ def oxford_comma(array)
           #
     return array2.join(" ")
     #binding.pry
-  end
-  if array_count == 2
+
+  elsif array_count == 2
     array.each do|value|
       array2 << ("#{value}")
       #binding.pry
@@ -29,8 +29,7 @@ def oxford_comma(array)
             #
       return array2.join(" and ")
       binding.pry
-  end
-  if array_count == 3
+  elsif array_count == 3
     array.each do|value|
       array2 << ("#{value}")
       #binding.pry
