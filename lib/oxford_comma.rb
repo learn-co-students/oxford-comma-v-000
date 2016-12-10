@@ -20,25 +20,17 @@ def oxford_comma(array)
     array2.insert(1,", ")
     array2.insert(3,", ")
     array2.join
-    #binding.pry
-    #array2.insert(2," and ")
-    #array2.join(" , ")
-    #array2.delete_at(6)
-        #return array2.join(" , ")
-    #return array2.join
-    #binding.pry
  elsif
-   #binding.pry
-    #array_count < array_total_minus_last
-     array.each do|value|
+    array.each do|value|
      array2 << ("#{value}" ", ")
             end
     array2.insert(-2, "and ")
-    binding.pry
+    #binding.pry
     array3 = []
-    binding.pry
+    #binding.pry
     array3 = array2.pop
-    array3.join
+    #array3.join
+    #puts array3
     binding.pry
       #binding.pry
       #return array2.join
