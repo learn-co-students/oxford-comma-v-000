@@ -25,10 +25,14 @@ def oxford_comma(array)
        array2 << ("#{value}" ", ")
       end
       array2.insert(-2, "and ")
+      #binding.pry
       array3 = []
-      array3 = array2.pop
+      array3 = array2.pop.to_s
+      array3.delete ", "
       binding.pry
-      return array2.join
+      #puts array3.join()
+      #binding.pry
+      #puts array2.join()
         #binding.pry
   end
 end
