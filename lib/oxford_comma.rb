@@ -24,8 +24,17 @@ def oxford_comma(array)
     #array2.insert(2," and ")
     #array2.join(" , ")
     #array2.delete_at(6)
-    #return array2.join(" , ")
+        #return array2.join(" , ")
     #return array2.join
     #binding.pry
+ elsif
+   #array_total= array_count
+   array.each do|value|
+     array2 << ("#{value}")
+            end
+      array2.insert(-2, "and ")
+      binding.pry
+      return array2.join(", ")
+      binding.pry
   end
 end
