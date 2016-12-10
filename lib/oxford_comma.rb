@@ -33,8 +33,13 @@ def oxford_comma(array)
      array.each do|value|
      array2 << ("#{value}" ", ")
             end
-    end
     array2.insert(-2, "and ")
+    binding.pry
+    array3 = []
+    binding.pry
+    array3 = array2.pop
+    array3.join
+    binding.pry
       #binding.pry
       #return array2.join
       return array2.join
