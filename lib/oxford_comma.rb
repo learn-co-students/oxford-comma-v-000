@@ -12,10 +12,17 @@ def oxford_comma(array)
       array2 << ("#{value}")
               end
         return array2.join(" and ")
-      binding.pry
   elsif array_count == 3
     array.each do|value|
       array2 << ("#{value}")
               end
-
+    array2.join
+    #binding.pry
+    #array2.insert(2," and ")
+    #array2.join(" , ")
+    #array2.delete_at(6)
+    #return array2.join(" , ")
+    #return array2.join
+    #binding.pry
+  end
 end
