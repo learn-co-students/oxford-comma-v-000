@@ -16,9 +16,9 @@ def oxford_comma(array)
     array.each do|value|
       array2 << ("#{value}")
               end
-    array2.insert(2, " and ")
-    array2.insert(1,",")
-    array2.insert(3,",")
+    array2.insert(2, "and ")
+    array2.insert(1,", ")
+    array2.insert(3,", ")
     array2.join
     #binding.pry
     #array2.insert(2," and ")
