@@ -15,13 +15,13 @@ def oxford_comma(array)
       #array2.join(" and ")
       array.join(" and ")
     elsif array_count == 3
-      array.each do|value|
-        array2 << ("#{value}")
-      end
-      array2.insert(2, "and ")
-      array2.insert(1,", ")
-      array2.insert(3,", ")
-      array2.join
+      #array.each do|value|
+      #  array2 << ("#{value}")
+      #end
+      array.insert(2, "and ")
+      array.insert(1,", ")
+      array.insert(3,", ")
+      array.join
     elsif
       array.each do|value|
        array2 << ("#{value}" ", ")
