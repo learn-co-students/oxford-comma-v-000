@@ -7,7 +7,7 @@ def oxford_comma(array)
       #array2 << ("#{value}")
       #end
       #return array2.join(" ")
-      return "#{array[0]}"
+      "#{array[0]}"
     elsif array_count == 2
       array.each do|value|
         array2 << ("#{value}")
@@ -27,7 +27,6 @@ def oxford_comma(array)
       end
       array2.insert(-2, "and ")
       return array2.join
-
       #binding.pry
       #array3 = []
       #array3 = array2.pop.to_s
