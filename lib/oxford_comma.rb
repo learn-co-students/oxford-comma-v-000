@@ -27,7 +27,7 @@ def oxford_comma(array)
       end
       array2.insert(-2, "and ")
       array2.join
-      array2.unshift
+      #array2.unshift
       #binding.pry
       #array3 = []
       #array3 = array2.pop.to_s
