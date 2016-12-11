@@ -26,10 +26,12 @@ def oxford_comma(array)
       end
       array2.insert(-2, "and ")
       #binding.pry
-      array3 = []
-      array3 = array2.pop.to_s
-      array3.delete ", "
-      binding.pry
+      #array3 = []
+      #array3 = array2.pop.to_s
+      #a = array3
+      #a.delete ", "
+      #puts a
+      #binding.pry
       #puts array3.join()
       #binding.pry
       #puts array2.join()
