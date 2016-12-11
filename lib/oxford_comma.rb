@@ -2,7 +2,7 @@ require 'pry'
 def oxford_comma(array)
   array_count=array.count
   array2=[]
-  if array_count == 1
+    if array_count == 1
     #array.each do|value|
       #array2 << ("#{value}")
       #end
@@ -21,12 +21,13 @@ def oxford_comma(array)
       array2.insert(1,", ")
       array2.insert(3,", ")
       array2.join
-   elsif
+    elsif
       array.each do|value|
        array2 << ("#{value}" ", ")
       end
       array2.insert(-2, "and ")
       array2.join
+      array2.unshift
       #binding.pry
       #array3 = []
       #array3 = array2.pop.to_s
@@ -38,5 +39,5 @@ def oxford_comma(array)
       #binding.pry
       #puts array2.join()
         #binding.pry
-  end
+    end
 end
