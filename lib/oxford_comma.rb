@@ -9,10 +9,11 @@ def oxford_comma(array)
       #return array2.join(" ")
       array[0]
     elsif array_count == 2
-      array.each do|value|
-        array2 << ("#{value}")
-      end
-      array2.join(" and ")
+      #array.each do|value|
+        #array2 << ("#{value}")
+      #end
+      #array2.join(" and ")
+      array.join(" and ")
     elsif array_count == 3
       array.each do|value|
         array2 << ("#{value}")
