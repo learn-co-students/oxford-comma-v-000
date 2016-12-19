@@ -13,5 +13,4 @@ def oxford_comma(array)
       end
       str << "and #{arr_copy.shift}"
   end
-  str
 end
