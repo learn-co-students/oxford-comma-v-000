@@ -14,7 +14,7 @@
 #end
 
 def oxford_comma(array)
-statement = array.join(", ")
+  statement = array.join(", ")
   if array.length == 1
     statement
   elsif array.length == 2
