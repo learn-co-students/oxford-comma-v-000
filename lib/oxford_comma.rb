@@ -3,7 +3,7 @@ def oxford_comma(array)
     array.join
   elsif array.size == 2
     array.join(" and ")
-  elsif array.size > 2
+  else array.size > 2
     last_item = array.pop
     string = array.join(", ")
     string << ", and #{last_item}"
