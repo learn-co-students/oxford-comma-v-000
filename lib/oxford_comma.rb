@@ -1,4 +1,4 @@
-def oxford_comma(array, *p)
+def oxford_comma(array)
   if array.length > 2
     new_array = array.pop
     original_string = array.join( ", ")
