@@ -10,10 +10,9 @@ def oxford_comma(array)
         array.insert(array.length - 3, ", ")
         array.join()
     elsif array.length > 3
-        array.each_with_index do ||
-
-        end
-
+        array[0..-2].join(", ")
+        array.insert(array.length - 1, " and ")
+        array.join(" ")
 
   end
 
