@@ -6,7 +6,13 @@ def oxford_comma(array)
     array.join(" and ")
 
   elsif array.length >= 3
-    new_string = array.join(", ")
-    new_string.insert(string.length - 1, " and ")
+    array.each_with_index do |array, index|
+      if index.odd?
+          array.insert(array.length - 1, ", ")
+      else
+
+      end
+    # array = array.join(", ")
+    new_string.insert(new_string.length - 1, "and ")
   end
 end
