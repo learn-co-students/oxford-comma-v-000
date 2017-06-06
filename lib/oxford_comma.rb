@@ -14,7 +14,7 @@ elsif array.length == 3
 another_array = array.take 4
 beginning = another_array.join(", ")
 last_element_array = array.pop
-final_array = last_element_array.insert(0, " and ")
+final_array = last_element_array.insert(0, ", and ")
 return beginning + final_array
   end
 end
