@@ -8,9 +8,10 @@ def oxford_comma(array)
     array.join(" and ")
 
   else
-    oxford_string = array.join(", ")
-    oxford_array = oxford_string.split(", ")
-    oxford_array[-1].prepend("and ")
-    oxford_array.join(", ")
+    # oxford_string = array.join(", ")
+    # oxford_array = oxford_string.split(", ")
+    #don't need these last two lines! redundant!
+    array[-1].prepend("and ")
+    array.join(", ")
   end
 end
