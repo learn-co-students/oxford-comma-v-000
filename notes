@@ -1,0 +1,126 @@
+
+def oxford_comma(array)
+  if array.size == 1
+    array.join
+  elsif array.size == 2
+    array.join(" and ")
+  elsif array.size == 3
+    array.insert(2, "and ")
+    print array
+  end
+end
+
+#=> ["fiddleheads", "okra", "and ", "kohlrabi"]
+
+# 9.array.join(", ") if replace current #9 get this result:
+# 9.converted to string "a, b, and,[5] c"
+
+#=> "fiddleheads, okra, and, kohlrabi"
+
+
+def oxford_comma(array)
+  if array.size == 1
+    array.join
+  elsif array.size == 2
+    array.join(" and ")
+  elsif array.size == 3
+    array.insert(2, "and ")
+    string = array.join(", ")
+    puts string
+  end
+end
+
+
+
+
+---
+
+
+
+1. adds 'and' between elements when given a 2-element array (FAILED - 1)
+2. adds commas plus a final 'and' when given a 3-element array (FAILED - 2)
+3. correctly formats arrays of lengths greater than three (FAILED - 3)
+
+*consider (shoveling) <<
+
+
+array = ["fiddleheads", "okra", "kohlrabi"]
+
+
+  string[5] needs to go!
+
+  2.3.1 :002 > def oxford_comma(array)
+2.3.1 :003?>     if array.size == 1
+2.3.1 :004?>         array.join
+2.3.1 :005?>       elsif array.size == 2
+2.3.1 :006?>         array.join(" and ")
+2.3.1 :007?>       elsif array.size == 3
+2.3.1 :008?>         orig_array = array
+2.3.1 :009?>         new_array = array.shift(2)
+2.3.1 :010?>         puts new_array
+2.3.1 :011?>     end
+2.3.1 :012?>   end
+ => :oxford_comma
+2.3.1 :013 > oxford_comma(array)
+fiddleheads
+okra
+ => nil
+
+
+ ----
+
+ ******* Most recent closest!!!
+ array = ["fiddleheads", "okra", "kohlrabi"]
+
+ def oxford_comma(array)
+   if array.size == 1
+     array.join
+   elsif array.size == 2
+     array.join(" and ")
+   elsif array.size == 3
+     orig_array = array
+     new_array = array.shift(2)
+     string = new_array.join(", ")
+     string << ", and "
+     puts string
+  end
+end
+
+ => "fiddleheads, okra ,and "
+
+
+
+
+     **string << orig_array[2]**
+     #no implicit conversion of nil into String
+
+
+ ----
+ ********
+ array = ["fiddleheads", "okra", "kohlrabi"]
+
+ def oxford_comma(array)
+   if array.size == 1
+     array.join
+   elsif array.size == 2
+     array.join(" and ")
+   elsif array.size == 3
+     orig_array = array
+     new_array = array.shift(2)
+     string = new_array.join(", ")
+     string << ", and "
+     puts string
+   end
+ end
+
+ => fiddleheads, okra, and
+
+ ********
+ ----
+
+     string << orig_array[2]
+     puts string
+   end
+ end
+
+   array.insert(2, "and ")
