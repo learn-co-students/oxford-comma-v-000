@@ -1,5 +1,3 @@
-# require "pry"
-
 def oxford_comma(array)
   if array.count == 1
     "#{array[0]}"
@@ -13,6 +11,4 @@ def oxford_comma(array)
     new_array = array.join(", ")
     new_array
   end
-
-  # binding.pry
 end
