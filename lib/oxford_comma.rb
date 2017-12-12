@@ -9,6 +9,8 @@ def oxford_comma(array)
     array.insert(array.length-1, "and")
     string += array.join(", ")
     string.sub! "and,", "and"
+  else
+    nil
   end
   string
 end
