@@ -17,11 +17,11 @@ end
 
 # refactor
 
-def oxford_comma(array)
+def oxford_comma(array) # array = [1, 2, 3, 4]
   if array.length == 2
     return "#{array[0]} and #{array[1]}"
   elsif array.length > 2
-    array.insert(array.length-1, "and ")
+    array[-1].insert(0, "and ") # [1, 2, 3, and 4]
   end
-  array.join(", ")
+  array.join(", ") # "1, 2, 3, and 4"
 end
