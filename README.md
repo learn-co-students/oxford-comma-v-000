@@ -1,6 +1,6 @@
 # Oxford Comma List Formatter
 
-## Objectives...
+## Objectives....
 
 1. Iterate over array elements.
 2. Use various methods to manipulate arrays and strings
