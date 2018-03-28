@@ -4,15 +4,12 @@ def oxford_comma(array)
       return i
     end
   elsif array.length == 2
-    i_array = Array.new
-    array.each do |i|
-      i_array.push(i.join("and"))
-    end
+    array.join(" and ")
   elsif array.length == 3
-    array.each do |i|
-      i.join(", ")
-    end
+    last = array.pop
+    array.join(", ")+", and "+last
   else
-    array.split
+    last = array.pop
+    array.join(", ")+", and "+last
   end
 end
