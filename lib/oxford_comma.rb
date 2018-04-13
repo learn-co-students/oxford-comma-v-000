@@ -4,5 +4,4 @@ def oxford_comma(array)
 
   output = array[0, array.size - 1].join(", ")
   output << ", and #{array.last}"
-  output
 end
