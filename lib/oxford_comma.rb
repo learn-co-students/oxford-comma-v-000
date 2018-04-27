@@ -24,7 +24,6 @@ def oxford_comma(array)
   elsif array.length == 3
     array[0..1].join(", ") + ", and " + array.last
   elsif array.length > 3
-    i = array.length
     array[0..array.length - 2].join(", ") + ", and " + array[array.length - 1]
   end
 end
