@@ -13,6 +13,6 @@ elsif array.length == 3
       asdf + ", and #{last}"
 
 else
-  result = "#{array[0, array.length.join(', '])} and #{array.last}"
+  result = "#{array[0, array.length.join(', ')]} and #{array.last}"
 end
 end
