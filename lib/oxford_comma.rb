@@ -11,15 +11,13 @@ placement = array.count
     array.insert(1, "and")
     s_return=array.join(" ")
     return s_return
+
 #if three or more elements, add commas and "and" & return as a string
   elsif placement>2
     and_index=placement-1
     array.insert(and_index, "and")
     s_return=array.join(", ")
     s_return.sub!("and,", "and")
-
-
     return s_return
   end #if..elsif
-
 end
