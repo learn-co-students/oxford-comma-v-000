@@ -1,18 +1,30 @@
+
 def oxford_comma(array)
 
-  string = ""
-  array.each do |arr|
+  if array.size == 1
+    array.join
+  elsif array.size == 2
+    array.join(" and ")
+  else
 
-    if arr== array[0]
-      string += "#{arr}"
-    elsif array.length == 2
-      string += " and #{arr}"
-      elsif arr == array[-1]
-        string += ", and #{arr}"
+    array.insert(-2,"and").join(", ").gsub(/and,/,"and")
 
-    else
-    string += ", #{arr}"
   end
-end
-return string
+  #string = ""
+#array.each do |arr|
+
+  #if array.size == 1
+      #{string += "#{arr}"}
+    #array.join
+  #elsif array.size == 2
+  #  arr.join(" , ")
+      #string += " and #{arr}"
+    #elsif arr == array[-1]
+    #  #string += ", and #{arr}"
+
+  #else
+    #string += ", #{arr}"
+#end
+#end
+#return string
 end
