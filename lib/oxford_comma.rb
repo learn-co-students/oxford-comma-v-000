@@ -1,7 +1,6 @@
 require "pry"
 
 def oxford_comma(array)
-
   if array.size == 2 
     elements = array.join " and "
 
@@ -15,4 +14,3 @@ def oxford_comma(array)
   end
 
 end
-
