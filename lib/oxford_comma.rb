@@ -1,11 +1,18 @@
 def oxford_comma(array)
-  if array.length > 2
-    new_array = array.pop
-    original_string = array.join( ", ")
-    original_string << ", and "
-    original_string << new_array
-  else
-    array.join
-    array.join( " and ")
+  ary_size = array.size
+
+  case ary_size
+    when 1
+      array.first
+    when 2
+      "#{array[0]} and #{array[1]}"
+    else
+      oxfordized = []
+      array.each do |ele|
+        oxfordized << "#{ele},"
+        break if ele == array.last
+      end
+      oxfordized[-1] = "and #{array.last}"
+      oxfordized.join(" ")
   end
 end
