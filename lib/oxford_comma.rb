@@ -3,9 +3,7 @@ def oxford_comma(array)
     array.join
   elsif array.count == 2
     array.join(" and ")
-  elsif array.count == 3
+  else array.count >= 3
   [array[0...-1].join(", "), array.last].join(", and ")
-else
-  
   end
 end
