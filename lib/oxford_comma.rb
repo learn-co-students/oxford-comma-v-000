@@ -11,7 +11,7 @@ def oxford_comma(array)
   elsif array.count >= 3 #3 elements 
     array.each {|e| array << e + ", " }
     array.insert(-2, " and ")
-    
+    array.join
     
   end
   
