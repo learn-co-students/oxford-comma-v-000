@@ -4,8 +4,15 @@ def oxford_comma(array)
 elsif array.length == 2
   array.join(" and ")
 elsif array.length == 3
-  array.join(" and ")
-else
-  array.join(",")
+  array.pop
+  array << "and starfruit"
+  array.join(", ")
+elsif array.length > 3
+  array.each do |fruit|
+    if array[-1]
+      array.last.prepend("and ")
+    end
+  return array.join(", ")
+  end
 end
 end
