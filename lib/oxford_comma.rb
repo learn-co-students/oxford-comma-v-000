@@ -5,8 +5,6 @@ def oxford_comma(array)
     return array[0] + " and " + array[1]
   elsif array.length > 2
     a = []
-    b = []
-    str = " "
     count = 0
     while count < array.length - 1
       a << array[count] + ", "
